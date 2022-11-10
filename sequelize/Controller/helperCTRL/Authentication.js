@@ -22,7 +22,7 @@ Velidation.loginVelidation = (req, res, next) => {
         email: Parameter.email,
         password: Parameter.Alphanum,
     }).unknown(false);
-    errorHandler(schema, next, req, res);
+    errorHandler(schema, next, req, res)
 }
 
 Velidation.customerAddress = (req, res, next) => {
