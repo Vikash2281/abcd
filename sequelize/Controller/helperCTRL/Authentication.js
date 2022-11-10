@@ -41,7 +41,7 @@ Velidation.customerCreatecart = (req, res, next) => {
 
 Velidation.sendOTP = (req, res, next) => {
     const schema = Joi.object().keys({
-        email: Parameter.email,
+        email: Parameter.Alphanum,
     }).unknown(false);
     errorHandler(schema, next, req, res);
 }
